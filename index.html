@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="div">
+        <div id="form">
+            <h2>CONTACT US</h2>
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="24a0811f-2e3e-4cf9-ba32-87ac5fa0d19b">
+                <label for="name">Name</label><br>
+                <input type="text" name="Name" id="name" placeholder="Enter Your Name" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br>
+                <!--
+                <label for="pass">Password</label><br>
+            <input type="password" name="password" id="pass" placeholder="Enter Your Password">
+            <label for="number">Number</label><br>-->
+                
+            <input type="tel" name="number" id="num" placeholder="Enter Your Phone"><br>
+            <label for="message">Message Me</label><br>
+            
+                <textarea name="message" id="mess" placeholder="Some Text " required></textarea><br>
+                <input type="submit" value="Submit" id="btn"
+                    onclick="document.getElementById('form').style.visibility=''">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
